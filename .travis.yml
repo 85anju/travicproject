@@ -9,4 +9,3 @@ python:
 virtualenv:
   system_site_packages: true
 
-script: python app.py || python3 app.py
