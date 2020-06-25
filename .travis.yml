@@ -1,18 +1,14 @@
-# language: python
+language: python
 
-# python:
-#   - "2.7"
-#   - "3.4"
-#   - "3.5"
-#   - "3.6"    
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"    
   
-# script: python app.py
-language: bash
-sudo : required
+script: python app.py
 
-services:
-- docker 
-
-script:
-- echo "hello bash travis file"
+branches:
+  only:
+  - branch-bash
 
