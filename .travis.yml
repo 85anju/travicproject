@@ -11,3 +11,4 @@ before_install:
 - docker ps -a
 - echo "$dockerpassword" | docker login -u "$dockerusername" --password-stdin
 - docker push anjali85/myimg:1.0
+- echo "image push done"
