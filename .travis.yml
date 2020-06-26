@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+- echo "$dockerusername"
 - docker build -t myimg .
 - docker images 
 - docker run -d -p 127.0.0.1:80:8888 myimg /bin/sh  -c " echo hii"
