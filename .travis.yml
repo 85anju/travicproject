@@ -7,7 +7,7 @@ before_install:
 - echo "$dockerusername"
 - docker build -t anjali85/myimg:1.0 .
 - docker images 
-- docker run -d -p 127.0.0.1:80:8888 myimg /bin/sh  -c " echo hii"
+- docker run -d -p 127.0.0.1:80:8888 anjali85/myimg:1.0 /bin/sh  -c " echo hii"
 - docker ps -a
 - echo "$dockerpassword" | docker login -u "$dockerusername" --password-stdin
 - docker push anjali85/myimg:1.0
