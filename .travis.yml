@@ -11,5 +11,6 @@ script: python app.py
 branches:
   only:
 #   - branch-bash
-  - branch-dockerimg
+#   - branch-dockerimg
+  - branch-compose
 
