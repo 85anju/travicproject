@@ -6,11 +6,18 @@ python:
   - "3.5"
   - "3.6"    
   
-script: python app.py
 
-branches:
-  only:
-#   - branch-bash
-#   - branch-dockerimg
-  - branch-compose
+jobs:
+  include:
+    - stage: test
+      script: python test1.py
+      script: python test2.py
+    - stage: deploy
+      script: python app.py
+      
+# branches:
+#   only:
+# #   - branch-bash
+# #   - branch-dockerimg
+#   - branch-compose
 
