@@ -10,8 +10,8 @@ script: python app.py
       
 branches:
   only:
+  - branch-helm
 #   - branch-bash
 #   - branch-dockerimg
 #   - branch-compose
-  - branch-helm
 
