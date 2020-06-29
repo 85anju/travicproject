@@ -7,13 +7,8 @@ python:
   - "3.6"    
   
 
-jobs:
-  include:
-    - stage: test
-      script: python test1.py
-      script: python test2.py
-    - stage: deploy
-      script: python app.py
+
+script: python app.py
       
 # branches:
 #   only:
